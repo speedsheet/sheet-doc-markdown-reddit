@@ -1,0 +1,160 @@
+# Reddit Markdown
+
+
+# Summary
+
+Bold		*<b>bold<>*
+
+
+
+# Syntax
+
+
+
+### Check Box
+
+Checked
+
+<cb>[x]<>
+
+Unchecked:
+
+<cb>[ ]<>
+
+Unchecked - Needs space between [ ]
+
+
+
+### Header
+
+Use <c>#<> to <c>######<>
+
+
+<cb># <v>H1 Header<><>
+
+<cb>## <v>H2 Header<><>
+
+<cb>### <v>H3 Header<><>
+
+<cb>#### <v>H4 Header<><>
+
+<cb>##### <v>H5 Header<><>
+
+<cb>###### <v>H6 Header<><>
+
+
+
+
+
+### Image
+
+<cb>![<v>Image Label<>](<v>file_name.png<>)<>
+
+
+
+### Link
+
+<cb>[<v>https://url<>]<>
+
+Labeled Link
+
+<cb>[<v>Label<>](<v>https://url<>)<>
+
+
+Github - Yes
+MacDown - No
+@
+@ url, web address, link
+
+
+
+### List - Ordered
+
+<cb>1. <v>Item One<>
+2. <v>Item Two<>
+5. <v>Item Three<><>
+
+Numbers before the '.' do not need to be sequential or in order.
+@
+@ numbered bullet points, bullets
+
+
+
+### List - Unordered (Bullets)
+
+<cb>* <v>Item One<>
+* <v>Item Two<>
+<v>...<><>
+
+Use <c>+<>
+@
+@ Bullet points
+
+
+
+### New Line
+
+<cb><v>Line one.  
+Line two, after new line.<><>
+
+Double Space at end of line one '  '.
+
+
+
+### Text - Escape
+
+<c>\\<v>x<><>		Escape a Character
+
+<c>\\*<>		Escape *
+<c>\\_<>		Escape _
+
+
+
+### Text - Emphasis / Bold
+
+<cb>*<v>Emphasis<>*<>
+
+Bold:
+
+<cb>**<v>Strong Emphasis<>**<>
+
+Surround Text With *
+
+
+
+### Text - Inline Code
+
+<cb>`<v>This_is_code<>`<>
+
+Surround with Back Quote `
+
+
+
+### Tex - Italic
+
+<cb>_<v>In Italics<>_<>
+
+Surround with Underscore _
+
+
+
+
+### Text - Panel	
+
+<cb>	<v>Tabbed Text In Panel<><>
+
+
+Indent with a TAB
+@
+@ Code
+
+
+
+### Text - Strikethrough
+
+<cb>~~<v>Strike Through<>~~<>
+
+Surround with Double ~
+
+
+
