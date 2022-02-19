@@ -1,9 +1,70 @@
 # Reddit Markdown
 
+# Official Doc
+<l>https://www.reddit.com/wiki/markdown<>
+
 
 # Summary
 
-Bold		*<b>bold<>*
+<table><col>Escape<><col><c>\\<><><col><c>\\<v>*<><><>
+<col> <>
+<col>Bold		<><col><c>** **
+__ __		<><><col><c>**<v><b>bold text<><>**
+__<v><b>bold text<><>__<><>
+<col> <>
+<col>Italics<><col><c>* *
+_ _		<><><col><c>*<v><i>italics text<><>*
+_<v><i>italics text<><>_<><>
+<col> <>
+<col>Bold Italics<><col><c>*** ***
+___ ___		<><><col><c>***<v><b><i>bold italics<><><>***
+___<v><b>bold italics<><>___<><>
+<col> <>
+<col>Strikethrough<><col><c>~~ ~~<><><col><c>~~<v><->strikethrough<><>~~<><>
+<col> <>
+<col>Spoiler<><col><c>>! !\<<><><col><c>>!<v><->Spoiler<><>!\<<><>
+<col> <>
+<col>Superscript<><col><c>^<v>word<>
+^( )<><><col><c>^<v><super>superscript<><>
+^(<v><super>superscript<><>)<><>
+<col> <>
+<col>Inline Code<><col><c>` `<><><col><c>`<v>code<>`<><>
+<col> <>
+<col>Link<><col><c>https://<><><col><c>https://<v>speedsheet.io<><><>
+<col><><col><c>r/<><><col><c>r/<v>subreddit<><><>
+<col><><col><c>u/<><><col><c>u/<v>user_1<><><>
+<col> <>
+<col><><col><c>[]()<><><col><c>[<v>label<>](<v>url<>)<><>
+<col> <>
+<col>Headings<><col><c>#
+\##
+\###
+\####
+\#####
+\######<><><col><c># <v>Heading<>
+\## <v>Heading<>
+\### <v>Heading<>
+\#### <v>Heading<>
+\##### <v>Heading<>
+\###### <v>Heading<><><>
+<col> <>
+<col>List / Unordered<><col><c>-
+*<><><col><c>- <v>Item<>
+- <v>Item<><><>
+<col> <>
+<col>List / Ordered<><col><c>1.<><><col><c>1. <v>Item 1<>
+2. <v>Item 2<><><>
+<col> <>
+<col>Code Block<><col>``` ```<><col><c>```
+<v>code<>
+```<><>
+<col> <>
+<col><><col>4 Spaces<><col><c>    <v>Code<>
+    <v>Code<><><>
+<col> <>
+<col>Quote Block<><col><c>>
+>><><><col>> <v>Quoted Text<>
+>> <v>Double Quoted Text<><><>
 
 
 
@@ -11,17 +72,75 @@ Bold		*<b>bold<>*
 
 
 
-### Check Box
+### Block - Paragraph
 
-Checked
+<cb><v>Paragraph 1
 
-<cb>[x]<>
+Paragraph 2<><>
 
-Unchecked:
 
-<cb>[ ]<>
+Separate With Blank Lines
 
-Unchecked - Needs space between [ ]
+
+
+### Block - Quoted
+
+<cb>><v>Quoted Block<>
+
+>><v>Double Quoted Block<><>
+
+
+Create a quoted block with <c>><>.
+@
+@ >
+
+
+
+### Code - Code Block - With Backticks	
+
+<cb>```
+<v>code<>
+```<>
+
+
+Wrap Code with Triple Backticks (```)
+@
+@ Code, ```
+
+
+
+
+
+### Code - Code Block - With Spaces
+
+<cb>    <v>code<>
+    <v>code<>
+    <v>code<><>
+
+
+Indent 4 Spaces
+
+
+
+### Code - Inline Code
+
+<cb>`<v>code<>`<>
+
+
+Surround with Backticks (`)
+@
+@ `
+
+
+
+### Escape
+
+<cb>\\<v>x<><>
+
+
+Escapes a single character and represents it as text.
+@
+@ \\
 
 
 
@@ -44,11 +163,11 @@ Use <c>#<> to <c>######<>
 
 
 
-
-
 ### Image
 
 <cb>![<v>Image Label<>](<v>file_name.png<>)<>
+@
+@ !{}()
 
 
 
@@ -59,12 +178,9 @@ Use <c>#<> to <c>######<>
 Labeled Link
 
 <cb>[<v>Label<>](<v>https://url<>)<>
-
-
-Github - Yes
-MacDown - No
 @
 @ url, web address, link
+@ []()
 
 
 
@@ -76,49 +192,88 @@ MacDown - No
 
 Numbers before the '.' do not need to be sequential or in order.
 @
-@ numbered bullet points, bullets
+@ numbered bullet points, bullets, 1., 2.
 
 
 
 ### List - Unordered (Bullets)
 
 <cb>* <v>Item One<>
-* <v>Item Two<>
-<v>...<><>
+* <v>Item Two<><>
 
-Use <c>+<>
+<cb>- <v>Item One<>
+- <v>Item Two<><>
+
+Use <c>*<> or <c>-<> and a space at the start of the line.
 @
-@ Bullet points
+@ Bullet points, *, -
 
 
 
-### New Line
+### Newline
 
-<cb><v>Line one.  
-Line two, after new line.<><>
+<cb>Line one.<m>  <>
+Line two.<><>
 
-Double Space at end of line one '  '.
-
-
-
-### Text - Escape
-
-<c>\\<v>x<><>		Escape a Character
-
-<c>\\*<>		Escape *
-<c>\\_<>		Escape _
+Double Space at the End of Line One ('  ')
+@
+@ new line
 
 
 
-### Text - Emphasis / Bold
+### Table
 
-<cb>*<v>Emphasis<>*<>
+<cb>| <v>heading<> | <v>heading<> |
+| ------- | ------- |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
 
-Bold:
 
-<cb>**<v>Strong Emphasis<>**<>
 
-Surround Text With *
+#### Table - Center
+
+<cb>| <v>heading<> | <v>heading<> |
+| :-----: | :-----: |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+#### Table - Left Justify
+
+<cb>| <v>heading<> | <v>heading<> |
+| :------ | :------ |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+#### Table - Right Justify
+
+<cb>| <v>heading<> | <v>heading<> |
+| ------: | ------: |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+### Text - Bold
+
+<cb>**<v>Bold<>**
+
+__<v>Bold<>__<>
+
+Surround text with a double asterisk (**) or double underscore (__).
+
+
+
+### Text - Bold Italics
+
+<cb>***<v>Bold Italics<>***
+
+___<v>Bold<>___<>
+
+Surround text with a double asterisk (**) or double underscore (__).
 
 
 
@@ -126,27 +281,27 @@ Surround Text With *
 
 <cb>`<v>This_is_code<>`<>
 
-Surround with Back Quote `
+Surround with Backticks (`)
 
 
 
-### Tex - Italic
+### Text - Italic
 
-<cb>_<v>In Italics<>_<>
+<cb>_<v>In Italics<>_
 
-Surround with Underscore _
+*<v>In Italics<>*<>
 
-
-
-
-### Text - Panel	
-
-<cb>	<v>Tabbed Text In Panel<><>
+Surround with a single underscore (_) or asterisk (*).
 
 
-Indent with a TAB
+
+### Text - Spoiler
+
+<cb>~~<v>Strike Through<>~~<>
+
+Surround with Double ~
 @
-@ Code
+@ spoilers, >!, !\<
 
 
 
