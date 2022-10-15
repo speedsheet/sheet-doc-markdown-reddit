@@ -1,10 +1,29 @@
 # Reddit Markdown
 
-# Official Doc
-<l>https://www.reddit.com/wiki/markdown<>
+
+<table><col><b>Syntax<>
+
+<*><link "?q=syntax+summary">Syntax - Summary<>
+<link "?q=syntax-only">Syntax - Details<><>
+
+<*><link "?q=syntax-only+block">Blocks<>
+<link "?q=syntax-only+code">Code<>
+<link "?q=syntax-only+header">Headers<>
+<link "?q=syntax-only+image">Images<>
+<link "?q=syntax-only+link">Links<>
+<link "?q=syntax-only+list">Lists<>
+<link "?q=syntax-only+table">Tables<>
+<link "?q=syntax-only+text">Text Formats<><><><col>     <><col><b>Special<>
+
+<*><link "?q=syntax-only+escape">Escaping<>
+<link "?q=syntax-only+newline">Newline<><>
+
+<b>Related Sheets<>
+
+<*><l "markdown">Markdown<><><><>
 
 
-# Summary
+# Syntax Summary
 
 <table><col>Escape<><col><c>\\<><><col><c>\\<v>*<><><>
 <col> <>
@@ -68,7 +87,16 @@ ___<v><b>bold italics<><>___<><>
 
 
 
+# Official Doc
+<l>https://www.reddit.com/wiki/markdown<>
+@
+@ online-docs-only, docs-only
+
+
+
 # Syntax
+@
+@ syntax-only
 
 
 
@@ -297,9 +325,11 @@ Surround with a single underscore (_) or asterisk (*).
 
 ### Text - Spoiler
 
-<cb>~~<v>Strike Through<>~~<>
+<cb>>!<v>Hidden Spoiler<>!\<<>
 
-Surround with Double ~
+Surround with <c>>!<> and <c>\<!<>.
+
+Hides the content unless clicked on.
 @
 @ spoilers, >!, !\<
 
@@ -307,9 +337,18 @@ Surround with Double ~
 
 ### Text - Strikethrough
 
-<cb>~~<v>Strike Through<>~~<>
+<cb>~~<v>Strikethrough<>~~<>
 
 Surround with Double ~
+@
+@ strike through
 
+
+
+### Text - Superscript
+
+<cb>^(<v>superscript<>)<>
+
+Surround with <c>^(<> and <c>)<>.
 
 
